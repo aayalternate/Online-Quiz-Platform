@@ -2,10 +2,10 @@
 # Project Name
 The Online Quiz Platform is a user-friendly, feature-rich solution designed to revolutionize quizzes and assessments
 ## Team members
-1. Adil Haneef [https://github.com/A0D1I2L3]
-2. Aayaas Mohammad P [https://github.com/aayalternate]
-3. Harikrishan R [https://github.com/Pixelrick420]
-4. Adithya Suresh P [https://github.com/Aadi-2k4]
+1. Adil Haneef[https://github.com/A0D1I2L3]
+2. Aayaas Mohammad P[https://github.com/aayalternate]
+3. Harikrishan R[https://github.com/Pixelrick420]
+4. Adithya Suresh P[https://github.com/Aadi-2k4]
 
 ## Team Id
 bumblebee
