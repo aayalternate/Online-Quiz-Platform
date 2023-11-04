@@ -16,7 +16,7 @@ bumblebee
 1. Explaining the working of project
 2. Embed video of project demo
 ## Libraries used
-Library Name - Version
+Library Name - Versio
 ## How to configure
 Instructions for setting up project
 ## How to Run
