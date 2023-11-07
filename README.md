@@ -5,7 +5,7 @@ The Online Quiz Platform is a user-friendly, feature-rich solution designed to r
 1. [Adil Haneef M K](https://github.com/A0D1I2L3)
 2. [Aayas Mohammad P](https://github.com/aayalternate)
 3. [Harikrishan R](https://github.com/Pixelrick420)
-4. [Adithya Suresh P](https://github.com/Aadi-2k4)
+4. [Aadithya Suresh P](https://github.com/Aadi-2k4)
 
 ## Team Id
 bumblebee
