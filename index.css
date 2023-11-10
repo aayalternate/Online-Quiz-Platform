@@ -98,6 +98,9 @@ color: #2563ea;
 background: white;
 
 }
+button:click{
+  transform: scale(-1,-1);
+}
 .google-button{
     background: #2563ea;
     border-radius: 0.4em;
