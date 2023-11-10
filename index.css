@@ -107,3 +107,36 @@ background: white;
 
 }
 
+@media(max-width:900px){
+  .main-container{
+    flex-direction: column;
+  }
+  .left-container{
+    flex-direction: row;
+    width: 100%;
+
+  }
+  .left-container>p{
+    font-size: 3rem;
+    margin-left: 25%;
+    width: 50%;
+    
+}
+  .right-container{
+    flex-direction: row;
+    width: 70%;
+    width: 100%;
+
+  }
+  .right-container>h1{
+    position: relative;
+    font-size: 2.5rem;
+align-self:flex-end;
+
+  }
+  .input-container{
+    position: absolute;
+    top: 110%;
+  }
+
+}
