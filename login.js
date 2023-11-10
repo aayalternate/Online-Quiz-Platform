@@ -23,7 +23,7 @@ auth.languageCode='en'
 const provider=new GoogleAuthProvider();
 
 
-const googleLogin=document.getElementById("submit-button");
+const googleLogin=document.getElementsByClassName("submit-button");
 googleLogin.addEventListener("click",function(){
 signInWithPopup(auth, provider)
 .then((result) => {
