@@ -20,10 +20,11 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const database=getDatabase(app)
+
 const auth=getAuth(app)
 auth.languageCode='en'
 const provider=new GoogleAuthProvider();
-const database=getDatabase(app)
 
 
 
@@ -38,10 +39,11 @@ var password=document.getElementById("password").value;
   .then((userCredential) => {
     // Signed up 
     const user = userCredential.user;
-    set(ref(database),'users/',user.uid),{
+    set(ref(database,'users/'+user.uid),{
       username:username,
       email:email,
-    }
+    })
+    
     window.location.href="quiz.html";
 
     // ...
