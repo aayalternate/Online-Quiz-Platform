@@ -6,6 +6,7 @@ html{
     margin: 0;
     padding: 0;
 }
+
 .container{
     font-family: 'Montserrat', sans-serif;
     transform: translate(0, 20%);
@@ -22,7 +23,14 @@ html{
     border-radius: 20px;
     width: 40%;
     border: solid;
+    margin-right: 20px;
+    
 }
+
+.container > div{
+    margin-right: 15px;
+}
+
 .question{
     background-color: rgb(255, 255, 255);
     column-span: 2;
@@ -30,7 +38,12 @@ html{
     border-radius: 10px;
     border: solid;
     border-width: 3px;
+    font-size: large;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 30px;
 }
+
 .option{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -38,11 +51,28 @@ html{
     background-color: #2563ea;
     border: black solid;
     border-width: 3px;
+    font-size: large;
+    font-weight: 400;
     
 }
-.left{
-    color: #ffff;
-    background-color: #2563ea;
-    border: black solid;
-    border-width: 3px;
+
+.option:hover{
+    opacity: 1;
+    transition: .7s;
+    transform: scale(1.05);
+    box-shadow: 5px 5px rgb(50, 50, 50);
+}
+
+.button-left{
+    position: absolute;
+    top: 17%; 
+    left:100px;
+    background: url('icons/back.png');
+}
+
+.button-right{
+    background : url('icons/forward.png');
+    position: absolute;
+    top: 17%; 
+    right: 100px;
 }
