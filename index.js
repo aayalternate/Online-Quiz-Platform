@@ -1,7 +1,9 @@
   
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
-import{getAuth,GoogleAuthProvider,signInWithPopup}from"https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js";
+import{getAuth,GoogleAuthProvider,signInWithPopup,createUserWithEmailAndPassword}from"https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js";
+import{getDatabase,set,ref}from"https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
+
 
 
 const firebaseConfig = {
@@ -21,6 +23,36 @@ const analytics = getAnalytics(app);
 const auth=getAuth(app)
 auth.languageCode='en'
 const provider=new GoogleAuthProvider();
+const database=getDatabase(app)
+
+
+
+
+
+document.getElementById("signup-button").addEventListener("click",function(){
+  var username=document.getElementById("username").value;
+var email=document.getElementById("email").value;
+var password=document.getElementById("password").value;
+
+  createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed up 
+    const user = userCredential.user;
+    set(ref(database),'users/',user.uid),{
+      username:username,
+      email:email,
+    }
+    window.location.href="quiz.html";
+
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage)
+    // ..
+  });
+})
 
 
 const googleLogin=document.getElementById("google-button");
@@ -34,7 +66,10 @@ window.location.href="quiz.html";
 }).catch((error) => {
   const errorCode = error.code;
   const errorMessage = error.message;
+  alert(errorMessage)
+ 
   
 });
   
 })
+
