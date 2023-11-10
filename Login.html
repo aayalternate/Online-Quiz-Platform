@@ -2,29 +2,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Responsive login</title>
+    <title>Quizhub login</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./login.css">
-    <script src="./login.js" defer type="module"></script>
 </head>
 <body>
-    <section>
-    <div class="content">
-    <div class="form">
-    <h2>Login</h2>
+    <div class="main-container"
+><div class="left-container">
+    <p>Welcome to Quizhub </p>
+</div>
+<div class="right-container">
+    <h1>Join Quizhub</h1>
+    <div class="input-container">
+    <input type="text" autocomplete="off" name="text" class="input" placeholder="Username">
+    <input type="text" autocomplete="off" name="text" class="input" placeholder="Email Id">
+    <input type="password" autocomplete="off" name="text" class="input" placeholder="Password">
+    <div class="button-holder">
+    <button class="email-button"> Sign Up </button>
+    <p>OR</p>
+    <button id="google-button" class="google-button"><img src="icons/Google-icon.png" alt="Google-ico" width="40px"></button>
+</div>
+</div>
+</div>
+</div>
+    
 
-                        <div class="input">
-                            <input type="submit" value="Sign in with google" id="submit-button">
-                        </div>
-
-                        <div class="input">
-                            <p>Don't have an account? <a href="#">Sign up</a></p>
-                        </div>
-            
-                    
-                </div>
-            </div>
-        </section>
+<script src="./login.js" defer type="module"></script>
 
     </body>
 </html>
