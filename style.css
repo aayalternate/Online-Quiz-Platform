@@ -1,7 +1,6 @@
-body{
-    width: 1280px;
-    min-height: 832px;
-    background-image: url(https://s3-alpha-sig.figma.com/img/2d7a/e38b/0708513d8fcea705e859a177584e6eec?Expires=1700438400&Signature=Foa4rRXomHGNaga72tSsbuVY1Wsk~FN-XcJrQUJClqZoyYvVs6Qz7-OwPFzTWiGa7kwLxoFfQqtpWlj6cu8ynC3jruSPqomihgKEVSfnzI4g2eEXIOpkvaNZmXj-X6EAfH0q199rf6ZmCOPh6MATvhCapUyZmb25hsZ2jnJd4onumU2gF-ilUH1eewl~dam9jbMr3S7Os5UNvyCAIqAcgrCzLMamzNhOPCIART0Upye2dl8wLEWqpDgv6teNE3ymYt2yQXH~mICzc-upQCmSc3WNDczoozAF8ZcTqVl2G64pReez~A9w8v06lc~h5jIng2~pl6edMDt7htEEbURA7w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+html{
+    background: rgb(4,11,25);
+    background: linear-gradient(90deg, rgba(4,11,25,1) 0%, rgba(0,0,0,1) 0%, rgba(36,96,228,1) 50%, rgba(255,255,255,1) 100%);
     background-size: cover;
     background-position: center;
     border: none;
@@ -10,22 +9,21 @@ body{
     padding: 0;
 }
 .container{
-    transform: translate(0, 50%);
+    font: ;
+    transform: translate(0, 20%);
     display: grid;
     text-align: center;
     grid-template-rows: 200px 80px 80px;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 50% 50%;
     column-gap:10px;
     row-gap:15px;
-    justify-items: stretch;
-    justify-content: center;
     position:relative;
-    top:60%;
-    left:20%;
-    background-color: rgba(255,255,255,.5);
-    padding: 30px;
-    border-radius: 15px;
-    width: fit-content;
+    left:10%;
+    background: rgb(255,255,255, .5);
+    background: linear-gradient(45deg, rgba(255,255,255, .5) 0%, rgba(255,255,255,.5) 0%, rgba(36,96,228,.5) 50%, rgba(0, 0,0, .5) 100%);
+    padding: 3%;
+    border-radius: 2%;
+    width: 75%;
 }
 .question{
     background-color: rgb(255, 255, 255);
