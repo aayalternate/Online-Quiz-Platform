@@ -39,11 +39,11 @@ var password=document.getElementById("password").value;
   .then((userCredential) => {
     // Signed up 
     const user = userCredential.user;
-    set(ref(database,'users/'+user.uid),{
+    set(ref(database,'users/'+user.uid),
       username:username,
       email:email,
     })
-    
+
     window.location.href="quiz.html";
 
     // ...
