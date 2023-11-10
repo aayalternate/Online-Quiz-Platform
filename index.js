@@ -29,7 +29,7 @@ signInWithPopup(auth, provider)
 .then((result) => {
   const credential = GoogleAuthProvider.credentialFromResult(result);
   const user = result.user;
-window.location.href="index.html";
+window.location.href="quiz.html";
 
 }).catch((error) => {
   const errorCode = error.code;
