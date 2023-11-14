@@ -68,8 +68,8 @@ html{
     border-radius: 100px;
     top: 60%;
     left: 15%;
-    height: 100px;
-    width: 100px; 
+    height: 99px;
+    width: 99px;  
     background-image: url('icons/less.jpg'); 
     background-repeat: no-repeat;
     background-size: 100%;
@@ -84,8 +84,8 @@ html{
     border-radius: 100px;
     top: 60%;
     right: 15%;
-    height: 100px;
-    width: 100px; 
+    height: 99px;
+    width: 99px; 
     background-image: url('icons/greater.jpg'); 
     background-repeat: no-repeat;
     background-size: 100%;
@@ -106,5 +106,5 @@ html{
     opacity: 1;
     transition: .7s;
     transform:scale(1.05);
-    box-shadow: 5px 5px rgb(50, 50, 50);
+    box-shadow: -5px 5px rgb(50, 50, 50);
 }
