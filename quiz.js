@@ -26,24 +26,24 @@ document.getElementsByClassName("button-right")[0].addEventListener('click',()=>
 
     var questionbank = [
         {
-            question: 'Which part is known as the powerhouse of cell ?',
-            options: ['footballer','chef','n1ga','goat'],
-            correctAns:'goat'
+            question:  'What is the capital of France?',
+            options: ['Berlin', 'Paris', 'Rome', 'Madrid'],
+            correctAns:'Paris'
         },
         {
-            question : 'shameer is from  ?',
-            options : ['koyikkod','kunnamkulam','he never born','who cares about that gay'],
-            correctAns: 'who cares about that gay'
+            question : 'Who wrote "Romeo and Juliet?',
+            options : ['Charles Dickens', 'William Shakespeare', 'Jane Austen', 'Mark Twain'],
+            correctAns: 'William Shakespeare'
         },
-        
-        {
-            
-            question : 'who is chad ?',
-            options : ['hari','adil','rep','dheeraj'],
-            correctAns : 'rep'
+        {  
+            question : 'What is the largest planet in our solar system??',
+            options : ['Venus', 'Mars', 'Jupiter', 'Saturn'],
+            correctAns : 'Jupiter'
         },
         {
-
+            question : 'In which year did the Titanic sink?',
+            options : ['1912', '1920', '1905', '1931'],
+            correctAns : '1912'
         }
     ];
 
