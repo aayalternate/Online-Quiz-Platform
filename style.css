@@ -108,3 +108,7 @@ html{
     transform:scale(1.05);
     box-shadow: -5px 5px rgb(50, 50, 50);
 }
+
+#scoredisplay{
+    font-size: small;
+}
