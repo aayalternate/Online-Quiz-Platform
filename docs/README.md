@@ -46,3 +46,6 @@ Javascript
 
 # How to Run:
 https://aayalternate.github.io/Online-Quiz-Platform/
+
+# Video demonstration
+https://imgur.com/a/KmHXeQF
