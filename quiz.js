@@ -4,6 +4,11 @@ for(let i=1;i<questions.length;i++){
     questions[i].style.display="none"
 }
 
+function renderQuestion(){
+    document.querySelectorAll('h1')[q_count].innerHTML=questionbank[q_count].question;
+    
+}
+
 document.getElementsByClassName("button-left")[0].addEventListener('click',()=>{
 
     if (q_count>=1){
@@ -11,8 +16,8 @@ document.getElementsByClassName("button-left")[0].addEventListener('click',()=>{
 
 questions[q_count].style.display="none";
 --q_count
-renderQuestion()
 questions[q_count].style.display="grid";
+renderQuestion()
 
 }
 })
@@ -21,9 +26,8 @@ document.getElementsByClassName("button-right")[0].addEventListener('click',()=>
         console.log(q_count)
     questions[q_count].style.display="none";
     ++q_count
-    renderQuestion()
-
     questions[q_count].style.display="grid";
+    renderQuestion()
 
 }}
     )
@@ -40,7 +44,7 @@ document.getElementsByClassName("button-right")[0].addEventListener('click',()=>
             correctAns: 'William Shakespeare'
         },
         {  
-            question : 'What is the largest planet in our solar system??',
+            question : 'What is the largest planet in our solar system?',
             options : ['Venus', 'Mars', 'Jupiter', 'Saturn'],
             correctAns : 'Jupiter'
         },
@@ -51,31 +55,28 @@ document.getElementsByClassName("button-right")[0].addEventListener('click',()=>
         }
     ];
 
-    let scoredisplay = document.getElementById('scoredisplay')
-    let score = 0
+    renderQuestion()
 
 
-function renderQuestion(){
-console.log(q_count)
-    document.querySelector('h1').innerHTML = questionbank[q_count].question;
 
-    allOptions= document.getElementsByClassName("option")
 
-     }
-     renderQuestion()
 
-for(i=0;i<allOptions.length;i++){
-    allOptions[i].addEventListener("click",()=>{
-        if(questionbank[q_count].correctAns=this.value){
-            score++
-            scoredisplay.innerHTML = score
-            document.getElementById('option2container').style.backgroundColor = "green"
-        }
+
+
+
+
+     // for(i=0;i<allOptions.length;i++){
+//     allOptions[i].addEventListener("click",()=>{
+//         if(questionbank[q_count].correctAns=this.value){
+//             score++
+//             scoredisplay.innerHTML = score
+//             document.getElementById('option2container').style.backgroundColor = "green"
+//         }
         
-    })
-    allOptions[i].innerHTML=questionbank[q_count].options[i]
+//     })
+//     allOptions[i].innerHTML=questionbank[q_count].options[i]
 
-}
+// }
 
 
 
