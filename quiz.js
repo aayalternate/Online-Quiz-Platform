@@ -27,7 +27,7 @@ document.getElementsByClassName("button-right")[0].addEventListener('click',()=>
     var questionbank = [
         {
             question: 'Which part is known as the powerhouse of cell ?',
-            options: ['footballer','chef','nigga','goat'],
+            options: ['footballer','chef','n1ga','goat'],
             correctAns:'goat'
         },
         {
