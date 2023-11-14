@@ -144,3 +144,9 @@ background: white;
     .google-button{width: 100%;
   height: 40px;}
 }
+
+.left-container > p > a{
+  background-color: white;
+  color: #2563ea;
+  border-radius: 10px;
+}
