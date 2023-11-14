@@ -10,14 +10,11 @@ The Online Quiz Platform is a user-friendly, feature-rich solution designed to r
 ## Team Id
 bumblebee
 
-## Link to product walkthrough
-[link to video]
 ## How it Works ?
-1. Explaining the working of project
-2. Embed video of project demo
+1. Uses Firebase for Signin and authorization
+2. Uses javascript for backend
+3. Provides user some preset questions (Create questions option to be added in further updates)
 ## Libraries used
-Library Name - Version
-## How to configure
-Instructions for setting up project
+Javascript
 ## How to Run
-Instructions for running
+https://aayalternate.github.io/Online-Quiz-Platform/
