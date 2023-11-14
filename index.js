@@ -24,6 +24,7 @@ const analytics = getAnalytics(app);
 const auth=getAuth(app)
 auth.languageCode='en'
 const provider=new GoogleAuthProvider();
+const database=getDatabase(app);
 
 
 

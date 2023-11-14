@@ -1,6 +1,6 @@
 const questions=document.getElementsByClassName("container");
 q_count=0
-for(var i=1;i<questions.length;i++){
+for(let i=1;i<questions.length;i++){
     questions[i].style.display="none"
 }
 
@@ -11,7 +11,9 @@ document.getElementsByClassName("button-left")[0].addEventListener('click',()=>{
 
 questions[q_count].style.display="none";
 --q_count
-questions[q_count].style.display="grid"
+renderQuestion()
+questions[q_count].style.display="grid";
+
 }
 })
 document.getElementsByClassName("button-right")[0].addEventListener('click',()=>{
@@ -19,12 +21,14 @@ document.getElementsByClassName("button-right")[0].addEventListener('click',()=>
         console.log(q_count)
     questions[q_count].style.display="none";
     ++q_count
-    questions[q_count].style.display="grid"
+    renderQuestion()
+
+    questions[q_count].style.display="grid";
+
 }}
     )
 
-
-    var questionbank = [
+    let questionbank = [
         {
             question:  'What is the capital of France?',
             options: ['Berlin', 'Paris', 'Rome', 'Madrid'],
@@ -47,6 +51,44 @@ document.getElementsByClassName("button-right")[0].addEventListener('click',()=>
         }
     ];
 
+    let scoredisplay = document.getElementById('scoredisplay')
+    let score = 0
+
+
+function renderQuestion(){
+console.log(q_count)
+    document.querySelector('h1').innerHTML = questionbank[q_count].question;
+
+    allOptions= document.getElementsByClassName("option")
+
+     }
+     renderQuestion()
+
+for(i=0;i<allOptions.length;i++){
+    allOptions[i].addEventListener("click",()=>{
+        if(questionbank[q_count].correctAns=this.value){
+            score++
+            scoredisplay.innerHTML = score
+            document.getElementById('option2container').style.backgroundColor = "green"
+        }
+        
+    })
+    allOptions[i].innerHTML=questionbank[q_count].options[i]
+
+}
 
 
 
+
+
+
+
+
+        // score++
+        // scoredisplay.innerHTML = score
+
+        // document.getElementById('option1container').style.backgroundColor = "green"
+        
+
+    
+       
