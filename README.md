@@ -14,6 +14,7 @@ bumblebee
 1. Uses Firebase for Signin and authorization
 2. Uses javascript for backend
 3. Provides user some preset questions (Create questions option to be added in further updates)
+4. Shows users score in realtime
 ## Libraries used
 Javascript
 ## How to Run
