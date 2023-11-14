@@ -6,8 +6,27 @@ for(let i=1;i<questions.length;i++){
 
 function renderQuestion(){
     document.querySelectorAll('h1')[q_count].innerHTML=questionbank[q_count].question;
+
+    allOptions=questions[q_count].getElementsByClassName("option")
+    for(i=0;i<allOptions.length;i++){
+        allOptions[i].innerHTML=questionbank[q_count].options[i];
+    }
+
     
-}
+//     allOptions=questions[q_count].getElementsByClassName("option")
+//         for(i=0;i<allOptions.length;i++){
+//             allOptions[i].addEventListener("click",()=>{
+//                          if(questionbank[q_count].correctAns=allOptions[q_count].innerHTML){
+//                 //             score++
+//                 //             scoredisplay.innerHTML = score
+//                              allOptions[q_count].style.backgroundColor = "green";
+//                 //         }   
+//                                }
+// })
+//         }
+
+
+    }
 
 document.getElementsByClassName("button-left")[0].addEventListener('click',()=>{
 
