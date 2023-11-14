@@ -22,11 +22,27 @@ The Online Quiz Platform is a dynamic and user-friendly solution crafted to rede
 •Responsive Design:
     The platform is built with a responsive design, making it accessible and user-friendly across various devices.
 
-# Team Id
+# Future updates:
+•User Account Management:
+    Allow users to create accounts for a personalized experience, track their quiz history, and save preferences.
+    
+•Customizable Quizzes:
+    Implement a feature that enables users to create and share their quizzes. Include options for adding various question types, setting time limits, and choosing difficulty levels.
+
+•Question Bank:
+    Create a repository of questions organized by categories or topics. This can provide users with a diverse set of questions to choose from when creating their quizzes.
+
+•Analytics and Insights:
+    Provide detailed analytics for quiz creators, including information on user performance, popular quizzes, and feedback.
+
+•Timer and Countdown:
+    Allow quiz creators to set timers for each question or the entire quiz to add an element of urgency and challenge.
+
+# Team Id:
 bumblebee
 
-# Libraries used
+# Libraries used:
 Javascript
 
-# How to Run
+# How to Run:
 https://aayalternate.github.io/Online-Quiz-Platform/
