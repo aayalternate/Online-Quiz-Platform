@@ -17,7 +17,7 @@ html{
     column-gap:20px;
     row-gap:15px;
     position:relative;
-    left:27%;
+    left:26%;
     background: rgb(255, 255, 255);
     padding: 3%;
     border-radius: 20px;
@@ -63,15 +63,38 @@ html{
     box-shadow: 5px 5px rgb(50, 50, 50);
 }
 
-.button-left{
+.button-left {
     position: absolute;
-    top: 17%; 
-    left:100px;
-    background: url('icons/back.png');
+    top: 17%;
+    left: 100px;
+    height: 100px;
+    width: 100px; 
+    background-image: url('icons/less.png'); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0; 
+    z-index: 1000;
+    display: block;
+    border: none;
+    cursor: pointer; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none;
+    border: 1px solid transparent;
 }
 
+.button-left:hover{
+    
+
+}
+ .button-right:hover{}
+
 .button-right{
-    background : url('icons/forward.png');
+    height:100px;
+    width:auto;
+    background-image: url('icons/greater.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
     position: absolute;
     top: 17%; 
     right: 100px;
