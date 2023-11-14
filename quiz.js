@@ -24,4 +24,29 @@ document.getElementsByClassName("button-right")[0].addEventListener('click',()=>
     )
 
 
+    var questionbank = [
+        {
+            question: 'Which part is known as the powerhouse of cell ?',
+            options: ['footballer','chef','nigga','goat'],
+            correctAns:'goat'
+        },
+        {
+            question : 'shameer is from  ?',
+            options : ['koyikkod','kunnamkulam','he never born','who cares about that gay'],
+            correctAns: 'who cares about that gay'
+        },
+        
+        {
+            
+            question : 'who is chad ?',
+            options : ['hari','adil','rep','dheeraj'],
+            correctAns : 'rep'
+        },
+        {
+
+        }
+    ];
+
+
+
 
